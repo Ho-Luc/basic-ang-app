@@ -1,0 +1,20 @@
+{
+  "name": "ang-exp-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack ./app/js bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "express": "^4.13.4",
+    "style-loader": "^0.13.1"
+  }
+}

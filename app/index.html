@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Animals, animals, animals!</title>
+  </head>
+  <body ng-controller="AnimalController as animalctrl">
+    <section ng-repeat="animal in animalctrl.animals">
+      <p>This is my pet {{animal.type}}</p>
+      <p>They are {{animal.age}} years old.</p>
+      <p>{{animal.type}} says "{{animal.says}}"</p>
+    </section>
+    <p>what's your favorite animal? : Your favorite animal is, {{animalctrl.text}}</p>
+    <input ng-model="animalctrl.text">
+    <button ng-click="animalctrl.delete()">Delete</button>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
